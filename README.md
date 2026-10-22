@@ -2,6 +2,10 @@
 
 A small analytics app for a retail dataset. You can look at KPIs, find risky products, and ask questions in plain English. A free LLM turns the question into SQL, the SQL is checked, then run on a read-only database, and the answer is explained using only the returned numbers.
 
+
+<img width="2284" height="1444" alt="dashboard" src="https://github.com/user-attachments/assets/dc39ac6c-296f-4ff9-a2a7-400da19a6b3e" />
+
+
 ## Stack
 SQLite, Python (pandas), Streamlit, Plotly, Power BI, a free LLM (Ollama locally or Gemini free tier).
 
@@ -22,7 +26,6 @@ ollama pull qwen2.5-coder:7b       # or set LLM_PROVIDER=gemini and a key
 streamlit run app.py
 pytest
 ```
-No dataset yet? `python tests/make_sample_data.py` makes a fake one at data/sample.csv.
 
 ## Assumptions
 - Discount is a fraction (0.2 = 20%) and profit is already after discount.
